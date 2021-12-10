@@ -1,4 +1,4 @@
-
+	
 //  En el siguiente ejemplo se tiene un arreglo, mismo que se usa
 //  para guardar las notas de un estudiantes, variable notasEstudiante
 //  Además, se tiene una variable de tipo arreglo de cadena, de mismo tamaño
@@ -15,14 +15,13 @@
 5.  notasEstudiante[0] <-- 8
 6.  notasEstudiante[1] <-- 5
 7.  notasEstudiante[2] <-- 2
-8.  Para(indice<--0, indice<3, 1) haga
-9.    Escribir notasEstudiante[indice]
-14. Fin_Para
-15. // presenta el siguiente reporte
-    // 8 es calificación -- Buena
-    // 5 es calificación -- Mala
-    // 2 es calificación -- Mala
-15. Para(indice<--0, indice<3, 1) haga
-16.   //
-17. Fin_Para
-18. Fin
+
+8. Para(indice<--0, indice<3, 1) haga
+9. 	Si notasEstudiante[indice] <= 5 entonces
+10. 		notasEstudianteCualitativo[indice] <-- "Mala"  
+11. 	Caso contrario	
+12. 		notasEstudianteCualitativo[indice] <-- "Buena" 
+13.      Fin Si
+14. Escribir notasEstudiante [indice] +  "es calificacion" + notasEstudianteCualitativo[indice]
+15. Fin_Para
+16. Fin
